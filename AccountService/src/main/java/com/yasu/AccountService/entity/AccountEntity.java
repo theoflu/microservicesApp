@@ -15,6 +15,7 @@ import java.util.UUID;
 @EqualsAndHashCode(of = {"id"})
 @ToString
 @Table(value = "accounts")
+@Builder
 public class AccountEntity implements Serializable {
     @PrimaryKey
     private String id = UUID.randomUUID().toString();
